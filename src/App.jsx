@@ -27,7 +27,6 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (editingId) {
-      // If editing, update user
       try {
         await axios.put(`https://jsonplaceholder.typicode.com/users/${editingId}`, formData);
         setUsers(users.map(user => (user.id === editingId ? { ...user, ...formData } : user)));
@@ -37,7 +36,6 @@ function App() {
         console.error('Error updating user:', error);
       }
     } else {
-      // If not editing, create new user
       try {
         const response = await axios.post('https://jsonplaceholder.typicode.com/users', formData);
         setUsers([...users, response.data]);
