@@ -1,0 +1,17 @@
+.container{
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    margin: 20px;
+}
+.card{
+    background-color:azure;
+    padding: 20px;
+    margin: 20px;
+}
+.head{
+    background-color: black;
+    color: bisque;
+    padding: 20px;
+    margin: 20px;
+}
